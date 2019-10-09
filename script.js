@@ -5,17 +5,40 @@ console.log(h2.textContent)
 
 
 /* Task 2 using plain JavaScript */
+
+// task 2a
 let div2a = document.getElementById('task2a');
 
 
 let btnAddTextToDiv2a = document.getElementById('addText');
 
-btnAddTextToDiv2a.addEventListener('click', ()=>{
+btnAddTextToDiv2a.addEventListener('click', () => {
 	let elementToAdd = document.createElement("p");
 	let div2aPText = document.createTextNode("Hello world");
 	elementToAdd.appendChild(div2aPText);
 	div2a.appendChild(elementToAdd);
 });
+
+
+// task 2b
+
+let greenBtn = document.getElementById('green');
+let redBtn = document.getElementById('red');
+
+greenBtn.addEventListener('click', () => {
+	document.getElementById('body').style.backgroundColor = 'green';
+})
+
+redBtn.addEventListener('click', () => {
+	document.getElementById('body').style.backgroundColor = 'red';
+})
+
+// task 2c
+let goToGoogle = document.getElementById('google');
+
+goToGoogle.addEventListener('click', () => {
+	window.location.href = "https://www.google.com";
+})
 
 
 /* Task 4 using jQuery */
