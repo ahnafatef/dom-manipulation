@@ -42,3 +42,19 @@ goToGoogle.addEventListener('click', () => {
 
 
 /* Task 4 using jQuery */
+$('#addTextWithJQ').click(function(){
+	$(task4a).append('<p>Hello world</p>');
+});
+
+$('#greenWithJQ').click(function(){
+	$('body').css('backgroundColor', 'green');
+});
+
+$('#redWithJQ').click(function(){
+	$('body').css('backgroundColor', 'red');
+});
+
+$('#addNum').click(function(){
+	let result = Number($('#num_1').val()) + Number($('#num_2').val());
+	$(this).after(`<p id=\'result\'>The sum is ${result}</p>`)
+})
